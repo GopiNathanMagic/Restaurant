@@ -24,10 +24,10 @@
                 <nav class="header-menu">
                     <ul>
                         <li><a href="#">home</a></li>
-                        <li><a href="#">product</a></li>
-                        <li><a href="#">promo</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li><a id="myseller" href="#myseller-scroll">best seller</a></li>
+                        <li><a id="myproduct" href="#myproduct-scroll">product</a></li>
+                        <li><a id="mypromo" href="#mypromo-scroll">promo</a></li>
+                        <li><a id="mycontact" href="#mycontact-scroll">contact</a></li>
                     </ul>
                 </nav>
 
@@ -94,7 +94,7 @@
     </section>
 
 
-    <section class="best-outer">
+    <section id="myseller-scroll" class="best-outer">
         <div class="container">
             <div class="best-content">
                 <h2>best seller</h2>
@@ -191,7 +191,7 @@
     </section>
 
 
-    <section class="res-menu-outer">
+    <section id="myproduct-scroll" class="res-menu-outer">
         <div class="container">
             <div class="res-menu-inner">
                 <div class="res-menu-left">
@@ -267,13 +267,28 @@
                 <div class="form-inner-outer">
                     <form action="" id="form">
                         <ul class="request-form">
-                            <li class="name"><input type="text" id="uname" placeholder="name*"><div class="error"></div></li>
-                            <li class="phone"><input type="tel" id="phone" name="phone" placeholder="phone*"><div class="error"></div></li>
-                            <li class="date"><input type="date" id="date" placeholder="date*"><div class="error"></div></li>
-                            <li class="time"><input type="time" id="time" placeholder="time*"><div class="error"></div></li>
-                            <li class="seat"><input type="text" id="seats" placeholder="seats*"><div class="error"></div></li>
-                            <li class="email"><input type="email" id="email" placeholder="email*"><div class="error"></div></li>
-                            <li class="txt-area"><textarea name="notes" id="notes" cols="30" rows="7" placeholder="notes*"></textarea><div class="error"></div></li>
+                            <li class="name"><input type="text" id="uname" name="uname" placeholder="name*">
+                                <div class="error"></div>
+                            </li>
+                            <li class="phone"><input type="tel" id="phone" name="phone" placeholder="phone*">
+                                <div class="error"></div>
+                            </li>
+                            <li class="date"><input type="date" id="date" name="date" placeholder="date*">
+                                <div class="error"></div>
+                            </li>
+                            <li class="time"><input type="time" id="time" name="time" placeholder="time*">
+                                <div class="error"></div>
+                            </li>
+                            <li class="seat"><input type="text" id="seats" name="seats" placeholder="seats*">
+                                <div class="error"></div>
+                            </li>
+                            <li class="email"><input type="email" name="email" id="email" placeholder="email*">
+                                <div class="error"></div>
+                            </li>
+                            <li class="txt-area"><textarea name="notes" id="notes" cols="30" rows="7"
+                                    placeholder="notes*"></textarea>
+                                <div class="error"></div>
+                            </li>
                             <div class="request-submit"><button type="submit" id="submit">RESERVE</button></div>
                         </ul>
                     </form>
@@ -285,34 +300,34 @@
         </div>
     </section>
 
-<section class="recom-outer">
-    <div class="container">
-        <div class="recom inner">
-            <div class="recom-content">
-                <div class="recom-sub-title">
-                    <span>TASTY AND CRUNCHY</span>
+    <section id="mypromo-scroll" class="recom-outer">
+        <div class="container">
+            <div class="recom inner">
+                <div class="recom-content">
+                    <div class="recom-sub-title">
+                        <span>TASTY AND CRUNCHY</span>
+                    </div>
+                    <div class="recom-title">
+                        <h2>RECOMENDED</h2>
+                    </div>
+                    <div class="recom-sub-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedolorm reminusto
+                            doeiusmod tempor incidition ulla mco laboris nisi ut aliquip ex ea commo
+                            condorico consectetur adipiscing elitut aliquip.</p>
+                    </div>
+                    <div class="recom-img"><img src="images/left-menu-img3.jpg" alt="recom"></div>
                 </div>
-                <div class="recom-title">
-                    <h2>RECOMENDED</h2>
-                </div>
-                <div class="recom-sub-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedolorm reminusto
-                        doeiusmod tempor incidition ulla mco laboris nisi ut aliquip ex ea commo
-                        condorico consectetur adipiscing elitut aliquip.</p>
-                </div>
-                <div class="recom-img"><img src="images/left-menu-img3.jpg" alt="recom"></div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-    <footer class="footer-outer">
+    <footer id="mycontact-scroll" class="footer-outer">
         <div class="container">
             <div class="footer-boxes">
                 <div class="footer-box">
                     <h2>Magic Restaurant</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>Perspiciatis, debitis nobis dolore
-                        veniam iste illum <br/>eligendi consectetur.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Perspiciatis, debitis nobis dolore
+                        veniam iste illum <br />eligendi consectetur.</p>
                     <ul class="social-media-outer">
                         <li class="social-icons"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                         <li class="social-icons"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -323,40 +338,40 @@
                 </div>
 
                 <div class="footer-box">
-						    
+
                     <ul class="footer-menu">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">product</a></li>
-                        
+
 
                     </ul>
-                
+
                 </div>
 
                 <div class="footer-box">
-						    
+
                     <ul class="footer-menu">
                         <li><a href="#">promo</a></li>
                         <li><a href="#">contact</a></li>
                         <li><a href="#">privacy</a></li>
-                        
+
 
                     </ul>
                 </div>
                 <div class="footer-box">
-						    
-                        <ul class="footer-menu">
-                            <li><a href="#">other</a></li>
-                            <li><a href="#">help</a></li>
-                            <li><a href="#">support</a></li>
-                            
-    
-                        </ul>
-                
+
+                    <ul class="footer-menu">
+                        <li><a href="#">other</a></li>
+                        <li><a href="#">help</a></li>
+                        <li><a href="#">support</a></li>
+
+
+                    </ul>
+
                 </div>
-            
-            
+
+
             </div>
         </div>
     </footer>
