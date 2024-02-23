@@ -459,7 +459,7 @@ h6 {
   padding: 18px 22px;
   border: 2px solid #ebebeb;
   outline: 0;
-  font-size: 11px;
+  font-size: 14px;
   background-color: #fff;
   color: #2e2e2e;
   font-weight: 400;
@@ -470,9 +470,13 @@ h6 {
   width: 100%;
   margin-bottom: 20px;
 }
-ul.request-form li:nth-child(2n) {
-  float: right;
+.summa {
+  display: flex;
+  justify-content: space-between;
 }
+/* ul.request-form li:nth-child(2n) {
+  float: right;
+} */
 .request-submit button {
   padding: 10px 30px;
   display: inline-block;
@@ -601,7 +605,6 @@ ul.request-form li:nth-child(2n) {
 .error {
   color: red;
   font-size: 16px;
-  margin-top: 10px;
   text-align: left;
 }
 .request-form.success input {
@@ -630,14 +633,16 @@ ul.request-form li:nth-child(2n) {
   border: 1px solid #999999;
   cursor: default;
   display: none;
-  margin-top: 0;
-  position: absolute;
+  position: fixed;
   text-align: left;
   width: 70%;
   z-index: 999;
   padding: 20px 20px;
-  left: 370px;
-  top: 410px;
+  /* left: 370px;
+  top: 410px; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .pop-img img {
@@ -689,4 +694,10 @@ ul.request-form li:nth-child(2n) {
   position: absolute;
   top: 0;
   right: 20px;
+}
+.cancel-icon .close1 {
+  color: #2e2e2e;
+  font-size: 25px;
+  display: block;
+  text-align: right;
 }

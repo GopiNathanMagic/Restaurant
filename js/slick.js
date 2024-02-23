@@ -32,21 +32,19 @@ $(document).ready(function () {
     });
   }
 
-  $(function () {
-    $("#contact").on("click", function () {
-      if ($(this).hasClass("selected")) {
-        deselect($(this));
-      } else {
-        $(this).addClass("selected");
-        $(".pop").slideFadeToggle();
-      }
-      return false;
-    });
+  $("#contact").on("click", function () {
+    if ($(this).hasClass("selected")) {
+      deselect($(this));
+    } else {
+      $(this).addClass("selected");
+      $(".pop").slideFadeToggle();
+    }
+    return false;
+  });
 
-    $(".close").on("click", function () {
-      deselect($("#contact"));
-      return false;
-    });
+  $(".close").on("click", function () {
+    deselect($("#contact"));
+    return false;
   });
 
   $.fn.slideFadeToggle = function (easing, callback) {
@@ -58,36 +56,34 @@ $(document).ready(function () {
     );
   };
 
-  // /* pop up 1 */
-  // function deselect(e) {
-  //   $(".pop").slideFadeToggle(function () {
-  //     e.removeClass("selected");
-  //   });
-  // }
+  /* pop 1*/
+  function deselect1(e) {
+    $(".pop1").slideFadeToggle(function () {
+      e.removeClass("selected1");
+    });
+  }
 
-  // $(function () {
-  //   $("#contact").on("click", function () {
-  //     if ($(this).hasClass("selected")) {
-  //       deselect($(this));
-  //     } else {
-  //       $(this).addClass("selected");
-  //       $(".pop").slideFadeToggle();
-  //     }
-  //     return false;
-  //   });
+  $("#contact1").on("click", function () {
+    if ($(this).hasClass("selected1")) {
+      deselect($(this));
+    } else {
+      $(this).addClass("selected1");
+      $(".pop1").slideFadeToggle();
+    }
+    return false;
+  });
 
-  //   $(".close").on("click", function () {
-  //     deselect($("#contact"));
-  //     return false;
-  //   });
-  // });
+  $(".close1").on("click", function () {
+    deselect1($("#contact1"));
+    return false;
+  });
 
-  // $.fn.slideFadeToggle = function (easing, callback) {
-  //   return this.animate(
-  //     { opacity: "toggle", height: "toggle" },
-  //     "fast",
-  //     easing,
-  //     callback
-  //   );
-  // };
+  $.fn.slideFadeToggle = function (easing, callback) {
+    return this.animate(
+      { opacity: "toggle", height: "toggle" },
+      "fast",
+      easing,
+      callback
+    );
+  };
 });
