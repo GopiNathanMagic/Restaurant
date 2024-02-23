@@ -268,6 +268,7 @@ h6 {
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
+  position: relative;
 }
 .res-menu-left {
   flex-basis: 45%;
@@ -620,4 +621,72 @@ ul.request-form li:nth-child(2n) {
 }
 .success textarea {
   border: 1px solid green;
+}
+
+/* pop up */
+
+.messagepop {
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  cursor: default;
+  display: none;
+  margin-top: 0;
+  position: absolute;
+  text-align: left;
+  width: 70%;
+  z-index: 999;
+  padding: 20px 20px;
+  left: 370px;
+  top: 410px;
+}
+
+.pop-img img {
+  max-width: 100%;
+  height: auto;
+}
+.pop-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pop-img {
+  flex-basis: 45%;
+}
+.pop-items {
+  flex-basis: 45%;
+}
+.pop-item .menu-details {
+  font-size: 16px;
+}
+.pop-item h5 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+.pop-item span {
+  font-size: 20px;
+  display: inline-block;
+}
+.pop-item-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pop-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+}
+.cancel-icon .close {
+  color: #2e2e2e;
+  font-size: 25px;
+  display: block;
+  text-align: right;
+}
+/* .pop-outer {
+  position: relative;
+} */
+.cancel-icon {
+  position: absolute;
+  top: 0;
+  right: 20px;
 }
