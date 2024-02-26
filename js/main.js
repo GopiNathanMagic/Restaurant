@@ -6,12 +6,19 @@ const seats = document.querySelector("#seats");
 const email = document.querySelector("#email");
 const notes = document.querySelector("#notes");
 const phone = document.querySelector("#phone");
+const button = document.querySelector("#myButton");
+const thankYou = document.querySelector("#thankYou");
 
-form.addEventListener("submit", (e) => {
+// //whenever the button is clicked, toggle the ".hidden" class
+button.addEventListener("click", () => {
   if (!validateInputs()) {
     e.preventDefault(); // form ahh submit panna vidakuadathu
   }
+  document.querySelector("#form").reset();
+  thankYou.classList.toggle("hidden");
 });
+
+// form.addEventListener("submit", (e) => {});
 
 function validateInputs() {
   const nameVal = uname.value.trim(); // space trim pannna use pandrom

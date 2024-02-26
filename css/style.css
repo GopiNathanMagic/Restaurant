@@ -34,7 +34,7 @@ body {
   line-height: 1.5;
 }
 .container {
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 ul {
@@ -452,7 +452,7 @@ h6 {
   margin-bottom: 15px;
 }
 .form-inner-outer {
-  padding: 0 200px;
+  padding: 0 100px;
 }
 .txt-area textarea {
   width: 100%;
@@ -470,7 +470,7 @@ h6 {
   width: 100%;
   margin-bottom: 20px;
 }
-.summa {
+.form-one {
   display: flex;
   justify-content: space-between;
 }
@@ -490,6 +490,12 @@ h6 {
   line-height: 1.5;
   background-color: transparent;
   color: #fff;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+#thankYou {
+  color: #13d513;
+  text-transform: capitalize;
 }
 .request-submit button:hover {
   background-color: #fec100;
@@ -616,21 +622,21 @@ h6 {
 .error input {
   border: 1px solid red;
 }
-.success input {
-  border: 1px solid green;
-}
+/* .success input {
+  border: 1px solid #0dfe0d;
+} */
 .error textarea {
   border: 1px solid red;
 }
-.success textarea {
-  border: 1px solid green;
-}
+/* .success textarea {
+  border: 1px solid #0dfe0d;
+} */
 
 /* pop up */
 
 .messagepop {
   background-color: #ffffff;
-  border: 1px solid #999999;
+  border: 1px solid #ccc;
   cursor: default;
   display: none;
   position: fixed;
@@ -638,11 +644,13 @@ h6 {
   width: 70%;
   z-index: 999;
   padding: 20px 20px;
-  /* left: 370px;
-  top: 410px; */
+  left: 370px;
+  top: 410px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .pop-img img {
@@ -700,4 +708,7 @@ h6 {
   font-size: 25px;
   display: block;
   text-align: right;
+}
+.hidden {
+  display: none;
 }
