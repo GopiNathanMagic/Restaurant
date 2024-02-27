@@ -788,6 +788,26 @@ img {
   .res-menu-outer {
     margin-bottom: 30px;
   }
+  .res-menu-right {
+    flex-basis: 100%;
+  }
+  .res-menu-left {
+    flex-basis: 100%;
+  }
+  .res-menu-inner {
+    text-align: center;
+  }
+  .res-menu-outer.res-menu-outer1 .res-menu-right {
+    text-align: center;
+    order: 1;
+  }
+  .form-one {
+    display: initial;
+  }
+  .request-form li {
+    width: 100%;
+  }
+
   /* pop up */
 
   .pop-items {
