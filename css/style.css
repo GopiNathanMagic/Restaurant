@@ -496,6 +496,7 @@ h6 {
 #thankYou {
   color: #13d513;
   text-transform: capitalize;
+  box-shadow: 0 0 15px #13d513;
 }
 .request-submit button:hover {
   background-color: #fec100;

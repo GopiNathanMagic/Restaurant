@@ -14,18 +14,7 @@ $(document).ready(function () {
     dots: true,
   });
 
-  /*scroll */
-
-  // $("#myproduct").click(function () {
-  //   $.scrollTo($("#myproduct-scroll"), 1000);
-  // });
-
-  // $("#myButton").click(function (event) {
-  //   event.preventDefault();
-  //   $.scrollTo($("#myDiv"), 1000);
-  // });
-
-  /* pop up */
+  /* pop up 1 */
   function deselect(e) {
     $(".pop").slideFadeToggle(function () {
       e.removeClass("selected");
@@ -56,7 +45,7 @@ $(document).ready(function () {
     );
   };
 
-  /* pop 1*/
+  /* pop up 2*/
   function deselect1(e) {
     $(".pop1").slideFadeToggle(function () {
       e.removeClass("selected1");
