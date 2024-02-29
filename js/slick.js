@@ -86,4 +86,19 @@ $(document).ready(function () {
     $("#header-menu").toggleClass("show-mobile-menu");
     $(".mobile-menu").toggle();
   });
+
+  /* scroll */
+
+  $(".scroll").on("click", function (e) {
+    e.preventDefault();
+
+    var dest = $(this).attr("href");
+
+    $("html, body").animate(
+      {
+        scrollTop: $(dest).offset().top,
+      },
+      2000
+    );
+  });
 });
