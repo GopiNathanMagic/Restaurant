@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="fa/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
@@ -108,7 +109,7 @@
                     ia odio vitae vestibulum vestibulum.</p>
             </div>
 
-            <div class="best-inner">
+            <div class="best-inner" data-aos="fade-up-right">
                 <div class="best-box">
                     <div class="best-image">
                         <img src="images/salad.jpg" alt="salad">
@@ -200,7 +201,7 @@
     <section id="myproduct-scroll" class="res-menu-outer scroll">
         <div class="container">
             <div class="res-menu-inner">
-                <div class="res-menu-left">
+                <div class="res-menu-left" data-aos="flip-left">
                     <div class="res-image">
                         <img src="images/white-home-img4.jpg" alt="res-img">
                     </div>
@@ -249,7 +250,7 @@
                         <a href="#" id="contact1">view our menu</a>
                     </div>
                 </div>
-                <div class="res-menu-left">
+                <div class="res-menu-left" data-aos="flip-right">
                     <div class="res-image">
                         <img src="images/white-home-img6.jpg" alt="res-img">
                     </div>
@@ -336,7 +337,9 @@
                             doeiusmod tempor incidition ulla mco laboris nisi ut aliquip ex ea commo
                             condorico consectetur adipiscing elitut aliquip.</p>
                     </div>
-                    <div class="recom-img"><img src="images/left-menu-img3.jpg" alt="recom"></div>
+                    <div class="recom-img" data-aos="zoom-in">
+                        <img src="images/left-menu-img3.jpg" alt="recom">
+                    </div>
                 </div>
             </div>
         </div>
@@ -344,7 +347,7 @@
 
     <footer id="mycontact-scroll" class="footer-outer scroll">
         <div class="container">
-            <div class="footer-boxes">
+            <div class="footer-boxes" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <div class="footer-box footer-box-main">
                     <h2>Magic Restaurant</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Perspiciatis, debitis nobis dolore
@@ -497,6 +500,16 @@
     <!-- js -->
     <script src="js/slick.js"></script>
     <script src="js/main.js"></script>
+    <!-- AOS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+    <script>
+        AOS.init({
+            duration: 2000, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+        });
+    </script>
 
 </body>
 
