@@ -89,16 +89,19 @@ $(document).ready(function () {
 
   /* scroll */
 
-  $(".scroll").on("click", function (e) {
+  $(document).on("click", ".scrollbtn", function (e) {
+    //console.log("On click");
     e.preventDefault();
 
     var dest = $(this).attr("href");
 
-    $("html, body").animate(
-      {
-        scrollTop: $(dest).offset().top,
-      },
-      2000
-    );
+    if (dest) {
+      $("html, body").animate(
+        {
+          scrollTop: $(dest).offset().top,
+        },
+        2000
+      );
+    }
   });
 });
